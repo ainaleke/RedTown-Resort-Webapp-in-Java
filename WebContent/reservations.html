@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Make a Reservation &gt;Red Town Resort</title>
+        <link href="styles/main.css" rel=stylesheet type="text/css">
+        
+    </head>
+    <body>
+        <main>
+        <h1>Reserving a Room at Red Town Resort</h1>
+        <h2>Rooms and Prices</h2>
+        <table>
+            <caption>Our Guest Rooms</caption>   
+            <tr>
+                <th>Room Type</th>
+                <th>Maximum Occupancy</th>
+                <th>Average Price per Night</th>
+            </tr>
+        
+            <tr>
+                <td>Attic Room</td>   
+                <td>1</td>
+                <td>$100</td>
+            </tr>
+            <tr>
+                <td>Standard Room</td>
+                <td>2</td>
+                <td>$180</td>
+            </tr>
+            <tr>
+                <td>Garden View Suite</td>
+                <td>4</td>
+                <td>$220</td>
+            </tr>
+            <tr>
+                <td>Executive Suite</td>
+                <td>3</td>
+                <td>$900</td>
+            </tr>
+        </table>
+        <h2>Submit a Reservation Request</h2>
+        <form method="POST" action="submitform">
+            <p><label>First Name <input type="text" name="firstname"></label></p>
+            <p><label>Last Name <input type="text" name="lastname"></label></p>
+            <p><label>Phone Number <input type="text" name="phonenumber"></label></p> 
+            <p><label>Email <input type="email" name="email"></label></p>
+        
+        <fieldset> <!--Group these radio buttons together-->
+            <legend>Preferred Room Type:</legend> <!--Kind of like a caption for The Fieldset describing the Radio buttons-->
+            <label><input type="radio" name="roomtype" value="Attic Room">Attic Room</label>
+            <label><input type="radio" name="roomtype" value="Standard Room">Standard Room</label>
+            <label><input type="radio" name="roomtype" value="Garden Suite">Garden View Suite</label>
+            <label><input type="radio" name="roomtype" value="Executive Suite">Exec. Suite</label>
+        </fieldset>
+        <p><label>Check in: </label><input type="date" name="checkindate"></p>
+        <p><label>Check out: </label><input type="date" name="checkoutdate"></p>
+        <p><label>Comment or Special Requests</label></p>
+        <textarea name="commentbox"></textarea>
+        <p><button type="submit">Submit Request</button></p>
+        <p><small><strong>Reservations must be made<em>at least</em> 30 days in advance</strong></small></p>
+        </form>
+        <p><a href="index.html">Return to Home Page</a></p>
+        </main>
+    </body>
+
+</html>

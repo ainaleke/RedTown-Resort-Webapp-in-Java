@@ -1,0 +1,23 @@
+.red{
+    color:red;
+    }
+.form-area
+{
+    background-color: #FAFAFA;
+	padding: 10px 40px 60px;
+	margin: 10px 0px 60px;
+	border: 1px solid GREY;
+	}
+body{
+     padding-top: 90px;
+    background-image: url(../images/holiday-resort.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.col-md-5{
+    align-content: center;
+    max-width: 890px;
+    margin-left: 180px; 
+    padding-top: 10px;
+    
+}
